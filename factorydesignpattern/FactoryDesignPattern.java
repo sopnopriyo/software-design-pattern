@@ -38,7 +38,7 @@ public class FactoryDesignPattern {
         
         
         Pizza mypizza = null;
-      PizzaStore pizza = new PizzaStore(new SimplePizzaFactory());
+      PizzaStore pizza = new PizzaStore();
       mypizza =  pizza.orderPizza(type);
       System.out.println("We ordered a " + mypizza.getName());
       System.out.println(mypizza);
